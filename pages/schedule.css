@@ -1,0 +1,295 @@
+:root {
+  --primary: #3F51B5;
+  --accent: #FF6F61;
+  --highlight: #F4C430;
+  --text: #333;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero {
+  background: #ffffff;
+  padding: 4rem 1.2rem 3rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Small badge */
+.hero-badge {
+  display: inline-block;
+  background: #F4C430;
+  color: #333;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Main heading */
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;
+  color: #3F51B5;
+  margin-bottom: 0.8rem;
+}
+
+/* Subtitle */
+.hero p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0 auto 2rem;
+}
+
+/* Info row */
+.hero-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-info div {
+  background: #ffffff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+}
+
+.hero-info strong {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  color: #3F51B5;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+
+.hero-info span {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+
+/* SECTIONS */
+.section {
+  padding: 2.5rem 1rem;
+}
+
+.light-bg {
+  background: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: var(--accent);
+  color: white;
+}
+
+/*schedule*/
+
+.schedule,.schedule-hidden {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Header row */
+.schedule-header {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2fr;
+  padding: 1rem 1.2rem;
+  background: #3F51B5;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Each schedule item */
+.schedule-row {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2fr;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Last row border fix */
+.schedule-row:last-child {
+  border-bottom: none;
+}
+
+/* Time column */
+.schedule-row span:first-child {
+  font-weight: 600;
+  color: #3F51B5;
+}
+
+/* Event name */
+.schedule-row span:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Venue */
+.schedule-row span:last-child {
+  color: #555;
+}
+
+
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  gap: 1.3rem;
+  width: 240px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+}
+/* image styles */
+.card-img,
+.card-img-portrait {
+  width: 240px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 12px;
+}
+
+/* portrait variant — taller crop for guest photos */
+.card-img-portrait {
+  height: 260px;
+  width: 240px;
+}
+
+/* event landscape variant */
+.card-img {
+  height: 160px;
+  width: 240px;
+}
+
+
+
+/* FOOTER */
+.footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+      .card-img { height: 180px; }
+  .card-img-portrait { height: 320px; }
+    .schedule-header {
+    display: none;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .schedule-row span {
+    font-size: 0.9rem;
+  }
+
+  .schedule-row span:first-child {
+    color: #FF6F61;
+  }
+  }
+    .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+}
